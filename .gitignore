@@ -1,0 +1,5 @@
+# Private local installation and monitoring artifacts
+pc/
+*.zip
+*.log
+.DS_Store

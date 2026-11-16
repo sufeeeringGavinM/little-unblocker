@@ -1,0 +1,8 @@
+{
+  "manifest_version": 2,
+  "name": "Little Unblocker for X",
+  "version": "1.0.0",
+  "description": "Unblock accounts one at a time from X's blocked accounts page.",
+  "browser_specific_settings": {"gecko": {"id": "little-unblocker@local.invalid"}},
+  "content_scripts": [{"matches": ["https://x.com/settings/blocked*", "https://twitter.com/settings/blocked*"], "js": ["unblock.js"], "run_at": "document_idle"}]
+}
